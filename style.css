@@ -1,0 +1,162 @@
+body {
+
+    background-color:hsl(0, 1%, 19%);
+    font-family: Arial, Helvetica, sans-serif ; color: whitesmoke;
+    
+}
+
+.glow-heading {
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 720;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ffffff20;
+  opacity: 0;
+  animation: fadeInGlow 6s ease forwards;
+}
+
+@keyframes fadeInGlow {
+  to {
+    opacity: 1;
+    text-shadow: 0 0 12px #ffffff40, 0 0 20px #ffffff20;
+  }
+}
+
+#home {
+  position: relative;
+  background: none;
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+
+#home::before {
+  content: '';
+  background: url('pictures/20250416_114846.jpg') center/cover no-repeat;
+  filter: blur(4.5px) brightness(78%);
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: -50px;
+  z-index: -1;
+}
+
+
+nav {
+    text-align:center;
+    margin-bottom: 25px;
+}
+nav button {
+    padding:8px 12px;
+    margin : 10px;
+    font-size: 12px;
+    background-color:darkslategray;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav button:hover {
+
+    background-color:#004141fa ;
+}
+
+nav button.active {
+  background-color: #023d3d;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transform: scale(1.055);
+}
+
+
+.slide-in{
+  position: relative;
+  left: -100%;
+  animation: slideIn 7s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
+.slide-in1{
+  position:relative;
+  left: -100%;
+  animation: slideInOut 17s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes slideInOut {
+  
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 0;
+
+  }
+  80% {
+    left: 0;
+  
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+ 
+footer {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer nav button {
+  padding:5px 10px;
+  margin : 5px;
+  font-size: 10px;
+  border:none;
+  cursor:pointer;
+  border-radius: none;
+  font-weight: bold;
+
+}
+
+a {
+  color: #ccc; /* Light gray or any soft color for dark theme */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff; /* Brighter color on hover */
+  text-decoration: underline; /* Optional effect */
+}
+
+a:visited {
+  color: #aaa; /* Slightly different shade if visited */
+}
+
+a:active {
+  color: #999; /* Color when clicked */
+}
+a {
+  transition: color 0.7s ease;
+}
+
+
+
+
+
+
+
