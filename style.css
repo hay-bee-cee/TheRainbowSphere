@@ -1,17 +1,18 @@
 body {
 
     background-color:hsl(0, 1%, 19%);
-    font-family: Arial, Helvetica, sans-serif ; color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ; color: whitesmoke; 
+    font-size: 1rem;
     
 }
 
 .glow-heading {
   color: #e0e0e0;
   text-align: center;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 720;
-  letter-spacing: 2px;
-  text-shadow: 0 0 8px #ffffff20;
+  letter-spacing: 0.125rem;
+  text-shadow: 0 0 0.5rem #ffffff20;
   opacity: 0;
   animation: fadeInGlow 6s ease forwards;
 }
@@ -19,14 +20,14 @@ body {
 @keyframes fadeInGlow {
   to {
     opacity: 1;
-    text-shadow: 0 0 12px #ffffff40, 0 0 20px #ffffff20;
+    text-shadow: 0 0 0.75rem #ffffff40, 0 0 1.25rem #ffffff20;
   }
 }
 
 #home {
   position: relative;
   background: none;
-  padding: 100px;
+  padding: 6.25rem;
   text-align: center;
   color: white;
 }
@@ -34,27 +35,28 @@ body {
 #home::before {
   content: '';
   background: url('20250416_114846.jpg') center/cover no-repeat;
-  filter: blur(4.5px) brightness(78%);
+  filter: blur(0.281rem) brightness(78%);
   position: absolute;
   top: 0; left: 0;
-  right: 0; bottom: -50px;
+  right: 0; bottom: -3.125rem;
   z-index: -1;
 }
 
 
+
 nav {
     text-align:center;
-    margin-bottom: 25px;
+    margin-bottom: 1.563rem;
 }
 nav button {
-    padding:8px 12px;
-    margin : 10px;
-    font-size: 12px;
+    padding:0.5rem 0.75rem;
+    margin : 0.625rem;
+    font-size: 0.75rem;
     background-color:darkslategray;
     color:white;
     border:none;
     cursor:pointer;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-weight: bold;
 }
 
@@ -67,7 +69,7 @@ nav button.active {
   background-color: #023d3d;
   color: white;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0.125rem 0.313rem rgba(0,0,0,0.2);
   transform: scale(1.055);
 }
 
@@ -87,7 +89,7 @@ nav button.active {
 .slide-in1{
   position:relative;
   left: -100%;
-  animation: slideInOut 17s linear infinite;
+  animation: slideInOut 16s linear infinite;
   white-space: nowrap;
 }
 
@@ -113,19 +115,19 @@ nav button.active {
 footer {
     color: whitesmoke;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 1.25rem;
+    font-size: 0.875rem;
 }
 
 footer nav {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 footer nav button {
-  padding:5px 10px;
-  margin : 5px;
-  font-size: 10px;
+  padding:0.313rem 0.625rem;
+  margin : 0.313rem;
+  font-size: 0.625rem;
   border:none;
   cursor:pointer;
   border-radius: none;
