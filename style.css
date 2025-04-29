@@ -25,23 +25,30 @@ body {
 
 #home {
   position: relative;
-  background: none;
-  padding: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  height: 75vh;            /* full viewport height */
   text-align: center;
   color: white;
+  overflow: hidden;         /* to avoid scroll caused by pseudo element */
 }
-
 #home::before {
   content: '';
-  background: url('20250416_114846.jpg') center/cover no-repeat;
+  background: url('pictures/20250416_114846.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   filter: blur(0.281rem) brightness(78%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: -3.5rem;
+  bottom: 0;    
   z-index: -1;
 }
+
+
 
 nav {
   text-align: center;
@@ -70,6 +77,18 @@ nav button.active {
   font-weight: bold;
   box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.2); 
   transform: scale(1.055);
+}
+
+.slide-in {
+  position: relative;
+  left: -100%;
+  animation: slideIn 7s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
 }
 
 
