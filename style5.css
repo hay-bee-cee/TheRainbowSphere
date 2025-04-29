@@ -1,6 +1,15 @@
 body{
-    background-color: rgb(80, 79, 79);
+    background-color: hsl(0, 1%, 19%);
     color: whitesmoke;
-
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
 }
+
+.text-content {
+    padding: 1rem;
+    max-width: 100%;
+    white-space: normal;  /* ensure wrapping */
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+  
