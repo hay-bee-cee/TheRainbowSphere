@@ -33,7 +33,7 @@ body {
 
 #home::before {
   content: '';
-  background: url('pictures/20250416_114846.jpg') center/cover no-repeat;
+  background: url('20250416_114846.jpg') center/cover no-repeat;
   filter: blur(0.281rem) brightness(78%);
   position: absolute;
   top: 0;
