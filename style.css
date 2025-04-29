@@ -1,20 +1,19 @@
 body {
-
-    background-color:hsl(0, 1%, 19%);
-    font-family: Arial, Helvetica, sans-serif ; color: whitesmoke; 
-    font-size: 1rem;
-    
+  background-color: hsl(0, 1%, 19%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: 0.85rem;
 }
 
 .glow-heading {
   color: #e0e0e0;
   text-align: center;
-  font-size: 2.375rem;
+  font-size: 1.9rem;
   font-weight: 720;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.13rem;
   text-shadow: 0 0 0.5rem #ffffff20;
   opacity: 0;
-  animation: fadeInGlow 6s ease forwards;
+  animation: fadeInGlow 5s ease forwards;
 }
 
 @keyframes fadeInGlow {
@@ -27,96 +26,58 @@ body {
 #home {
   position: relative;
   background: none;
-  padding: 6.25rem;
+  padding: 6.2rem;
   text-align: center;
   color: white;
 }
 
 #home::before {
   content: '';
-  background: url('20250416_114846.jpg') center/cover no-repeat;
+  background: url('pictures/20250416_114846.jpg') center/cover no-repeat;
   filter: blur(0.281rem) brightness(78%);
   position: absolute;
-  top: 0; left: 0;
-  right: 0; bottom: -3.125rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -3.5rem;
   z-index: -1;
 }
 
-
-
 nav {
-    text-align:center;
-    margin-bottom: 1.563rem;
+  text-align: center;
+  margin-bottom: 1.563rem;
 }
+
 nav button {
-    padding:0.5rem 0.75rem;
-    margin : 0.625rem;
-    font-size: 0.75rem;
-    background-color:darkslategray;
-    color:white;
-    border:none;
-    cursor:pointer;
-    border-radius: 0.625rem;
-    font-weight: bold;
+  padding: 0.5rem 0.75rem; 
+  margin: 0.625rem;
+  font-size: 0.65rem;
+  background-color: darkslategray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  font-weight: bold;
 }
 
 nav button:hover {
-
-    background-color:#004141fa ;
+  background-color: #004141fa;
 }
 
 nav button.active {
   background-color: #023d3d;
   color: white;
   font-weight: bold;
-  box-shadow: 0 0.125rem 0.313rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.2); 
   transform: scale(1.055);
 }
 
 
-.slide-in{
-  position: relative;
-  left: -100%;
-  animation: slideIn 7s ease-out forwards;
-}
-
-@keyframes slideIn {
-  to {
-    left: 0;
-  }
-}
-
-.slide-in1{
-  position:relative;
-  left: -100%;
-  animation: slideInOut 16s linear infinite;
-  white-space: nowrap;
-}
-
-@keyframes slideInOut {
-  
-  0% {
-    left: -100%;
-  }
-  20% {
-    left: 0;
-
-  }
-  80% {
-    left: 0;
-  
-  }
-  100% {
-    left: 100%;
-  }
-}
-
- 
 footer {
-    color: whitesmoke;
-    text-align: center;
-    padding: 1.25rem;
-    font-size: 0.875rem;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1.25rem; 
+  font-size: 0.7rem; 
 }
 
 footer nav {
@@ -125,40 +86,30 @@ footer nav {
 }
 
 footer nav button {
-  padding:0.313rem 0.625rem;
-  margin : 0.313rem;
-  font-size: 0.625rem;
-  border:none;
-  cursor:pointer;
+  padding: 0.313rem 0.625rem;
+  margin: 0.313rem;
+  font-size: 0.525rem; 
+  border: none;
+  cursor: pointer;
   border-radius: none;
   font-weight: bold;
-
 }
 
 a {
-  color: #ccc; /* Light gray or any soft color for dark theme */
+  color: #ccc;
   text-decoration: none;
-}
-
-a:hover {
-  color: #fff; /* Brighter color on hover */
-  text-decoration: underline; /* Optional effect */
-}
-
-a:visited {
-  color: #aaa; /* Slightly different shade if visited */
-}
-
-a:active {
-  color: #999; /* Color when clicked */
-}
-a {
   transition: color 0.7s ease;
 }
 
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
+a:visited {
+  color: #aaa;
+}
 
-
-
-
-
+a:active {
+  color: #999;
+}
