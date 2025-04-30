@@ -27,12 +27,12 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* vertical centering */
-  align-items: center;      /* horizontal centering */
-  height: 35vh;            /* full viewport height */
+  justify-content: center;  
+  align-items: center;     
+  height: 35vh;            
   text-align: center;
   color: white;
-  overflow: hidden;         /* to avoid scroll caused by pseudo element */
+  overflow: hidden;       
 }
 #home::before {
   content: '';
