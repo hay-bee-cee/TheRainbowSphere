@@ -34,6 +34,7 @@ body {
   color: white;
   overflow: hidden;       
 }
+
 #home::before {
   content: '';
   background: url('20250416_114846.jpg') center center;
@@ -51,15 +52,20 @@ body {
 
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-radius: 0.3rem;text-align: center;
+  width: 100%;
   margin-bottom: 1.563rem;
   padding: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.03); /* subtle soft layer */
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  width: 100%;
+  border-radius: 0.3rem;
   backdrop-filter: blur(2px);
+  box-sizing: border-box;
 }
 
 nav button {
