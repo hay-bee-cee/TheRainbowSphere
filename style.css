@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;  /* vertical centering */
   align-items: center;      /* horizontal centering */
-  height: 45vh;            /* full viewport height */
+  height: 42vh;            /* full viewport height */
   text-align: center;
   color: white;
   overflow: hidden;         /* to avoid scroll caused by pseudo element */
