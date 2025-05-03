@@ -8,7 +8,7 @@ body {
 .glow-heading {
   color: #e0e0e0;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 1rem;
   font-weight: 720;
   letter-spacing: 0.13rem;
   text-shadow: 0 0 0.5rem #ffffff20;
@@ -30,13 +30,13 @@ body {
   flex-direction: column;
   justify-content: center;  
   align-items: center;   
-  height: 58vh;            
+  height: 55vh;            
   text-align: center;
   overflow: hidden; 
         
 }
 #welcome {
-  font-size: 1rem; 
+  font-size: 0.85rem; 
  text-align: center; 
   margin-top: 7rem;
   color:whitesmoke; 
@@ -44,12 +44,12 @@ body {
   letter-spacing: 0.3rem;
   margin-bottom: 2.5rem;
   color:whitesmoke; 
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 #welcome2 {
   text-align: center; 
-  font-size: 0.8rem; 
+  font-size: 0.75rem; 
   margin-bottom: 3rem;
   line-height: 1.6;
 }
@@ -89,13 +89,13 @@ nav {
 
 nav button {
   padding: 0.5rem 0.75rem; 
-  margin: 0.625rem;
+  margin: 0.525rem;
   font-size: 0.65rem;
   background-color: darkslategray;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 0.625rem;
+  border-radius: 0.6rem;
   font-weight: bold;
 }
 
