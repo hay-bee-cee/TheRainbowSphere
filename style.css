@@ -225,20 +225,20 @@ a:active {
   }
 
   #welcome {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
     letter-spacing: 0.25rem;
   }
 
   #welcome2 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin-bottom: 2rem;
   }
 
   nav {
-    flex-direction: column;
-    padding: 0.5rem 0;
+    flex-direction: row;
+    padding: 0.35rem 0;
   }
 
   nav button {
