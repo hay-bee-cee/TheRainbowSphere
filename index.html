@@ -12,8 +12,8 @@
 <body>
   <header>
     <h1 class="glow-heading"> The RainbowSphere </h1>
-
     <nav>
+      <section>
       <button onclick="showPage('home')">Home</button>
       <button onclick="showPage('community_hall')">Community Hall</button>
       <button onclick="showPage('opportunity_page')">Opportunity Page</button>
@@ -21,27 +21,21 @@
       <button onclick="showPage('library')">Library</button>
       <button onclick="showPage('announcement')">Announcements</button>
       <button onclick="showPage('event')">Events</button>
+      </section>
     </nav>
-
+  
     
   </header>
 
 
   <main>
     <section id="home">
-      <h1 style="font-size: 0.95rem; 
-                 text-align: center; 
-                 margin-top: 3.5rem;
-                 color:whitesmoke; 
-                line-height: 1.7;
-                 font-family:'Times New Roman', Times, serif;
-                 letter-spacing: 0.1rem;
-                 margin-bottom: 2rem;">
-       Welcome to the Official Website of The RainbowSphere Society 
+      <h1 id="welcome">
+        Welcome to the official website of The RainbowSphere Society
       </h1>
 
-      <p style="text-align: center; font-size: 0.75rem; margin-bottom: 0.9rem;" class="slide-in">
-        <i>Where diverse individuals share their perspectives, talents, and wisdom</i>
+      <p id="welcome2" class="slide-in">
+        <i>A space where individuals from various backgrounds come together to share their unique perspectives, talents, and wisdom</i>
       </p>
     </section>
 
@@ -53,7 +47,7 @@
       <h4>Opportunity page</h4>
     </section>
 
-    <section id="spring_of_inspiration" style="margin-top: 3.5rem; font-size: 0.85rem; margin-bottom: 3rem;">
+    <section id="spring_of_inspiration" style="margin-top: 3.5rem; font-size: 0.88rem; margin-bottom: 3rem;">
 
       <ul>
         <li>
@@ -126,8 +120,11 @@
       </ul>
     </section>
 
-    <section id="contact">
-      <p>Reach us on...</p>
+    <section id="contact" class="contact">
+      <h4>Reach us on:</h4>
+      <p><strong>Email:</strong> <a href="mailto:rainbowsphere427@gmail.com">rainbowsphere427@gmail.com</a></p>
+      <p><strong>WhatsApp Group:</strong> <a href="https://chat.whatsapp.com/K7MYWsEzA2EAN11o8GF5O" target="_blank">click to join</a></p>
+      <p><strong>Telegram Group:</strong> <a href="https://t.me/+IUxmWeJx9x5iNjk0" target="_blank">click to join our library</a></p>
     </section>
   </main>
 
@@ -138,8 +135,7 @@
       <button onclick="showPage('about')" style="background-color: rgb(85, 83, 83); color:white;">About us</button>
       <button onclick="showPage('contact')" style="background-color: rgb(85, 83, 83); color:white;">Contacts</button>
     </nav>
-
-    <p style="font-size: 0.65rem;">&copy; 2025 The RainbowSphere Society. All rights reserved.</p>
+    <p>&copy; 2025 The RainbowSphere Society. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
