@@ -23,21 +23,38 @@ body {
   }
 }
 
+
 #home {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;  
-  align-items: center;     
-  height: 35vh;            
+  align-items: center;   
+  height: 58vh;            
   text-align: center;
-  color: white;
-  overflow: hidden;       
+  overflow: hidden; 
+        
+}
+#welcome {
+  font-size: 1rem; 
+ text-align: center; 
+  margin-top: 9.5rem;
+  color:whitesmoke; 
+  font-family:'Times New Roman', Times, serif;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2.5rem;
+  color:whitesmoke; 
+}
+
+#welcome2 {
+  text-align: center; 
+  font-size: 0.8rem; 
+  margin-bottom: 3rem;
 }
 
 #home::before {
   content: '';
-  background: url('20250416_114846.jpg') center center;
+  background: url('pictures/20250416_114846.jpg') center center;
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(0.281rem) brightness(78%);
@@ -59,7 +76,7 @@ nav {
   text-align: center;
   width: 100%;
   margin-bottom: 1.563rem;
-  padding: 0.25rem 0;
+  padding: 0.1rem 0;
   background-color: rgba(255, 255, 255, 0.03); /* subtle soft layer */
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -110,6 +127,7 @@ footer {
   text-align: center;
   padding: 1.25rem; 
   font-size: 0.7rem; 
+  margin-top: 1rem;
 }
 
 footer nav {
@@ -126,6 +144,8 @@ footer nav button {
   border-radius: none;
   font-weight: bold;
 }
+
+ 
 
 a {
   color: #ccc;
@@ -144,4 +164,114 @@ a:visited {
 
 a:active {
   color: #999;
+}
+
+/* === Default for large screens (laptops, desktops) === */
+@media (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .glow-heading {
+    font-size: 2.3rem;
+    letter-spacing: 0.17rem;
+  }
+
+  #welcome {
+    font-size: 1.2rem;
+    margin-top: 8.7rem;
+    letter-spacing: 0.35rem;
+  }
+
+  #welcome2 {
+    font-size: 0.9rem;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 2rem;
+  }
+
+  footer nav button {
+    font-size: 0.6rem;
+  }
+
+  #home {
+    height: 48vh;
+    padding: 2rem 0;
+  }
+
+  #home::before {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* === Responsive layout for smaller devices (phones, etc.) === */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+
+  .glow-heading {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  #welcome {
+    font-size: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.25rem;
+  }
+
+  #welcome2 {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  nav button {
+    width: 90%;
+    font-size: 0.75rem;
+    margin: 0.5rem auto;
+  }
+
+  footer {
+    font-size: 0.65rem;
+    padding: 1rem;
+  }
+
+  footer nav button {
+    font-size: 0.6rem;
+    width: 85%;
+    margin: 0.3rem auto;
+  }
+
+  #home {
+    height: auto;
+    padding: 5rem 0 3rem 0;
+  }
+
+  #home::before {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* === Universal image responsiveness === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
