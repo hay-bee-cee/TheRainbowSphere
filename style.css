@@ -225,25 +225,20 @@ a:active {
   }
 
   #welcome {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
     letter-spacing: 0.25rem;
   }
 
   #welcome2 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     margin-bottom: 2rem;
   }
 
-  nav {
-    flex-direction: row;
-    padding: 0.35rem 0;
-  }
 
   nav button {
-    width: 20%;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     margin: 0.5rem auto;
   }
 
@@ -254,8 +249,7 @@ a:active {
 
   footer nav button {
     font-size: 0.6rem;
-    width: 15%;
-    margin: 0.3rem auto;
+    margin: 0.5rem auto;
   }
 
   #home {
