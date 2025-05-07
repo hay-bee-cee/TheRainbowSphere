@@ -113,7 +113,7 @@ nav button.active {
 
 .slide-in {
   position: relative;
-  left: -100%;
+  left: -50%;
   animation: slideIn 7s ease-out forwards;
 }
 
