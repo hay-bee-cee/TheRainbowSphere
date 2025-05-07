@@ -38,7 +38,7 @@ body {
 #welcome {
   font-size: 0.9rem; 
  text-align: center; 
-  margin-top: 9rem;
+  margin-top: 7rem;
   color:whitesmoke; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.3rem;
@@ -181,6 +181,7 @@ a:active {
   #welcome {
      font-size: 1.1rem;
      letter-spacing: o.35rem;
+    margin-top: 9rem;
   }
   #welcome2 {
     font-size: 0.87rem;
