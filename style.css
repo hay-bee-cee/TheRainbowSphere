@@ -166,3 +166,47 @@ a:visited {
 a:active {
   color: #999;
 }
+
+
+@media  (min-width: 768px)
+{
+  
+  body{
+    font-size: 1rem;
+  }
+  .glow-heading{
+    font-size: 2.1rem;
+    letter-spacing: 0.17rem;
+  }
+  #welcome {
+     font-size: 1.1rem;
+     letter-spacing: o.35rem;
+  }
+  #welcome2 {
+    font-size: 0.87rem;
+  }
+  
+  nav {
+    background-color: rgba(34, 34, 34, 0);
+  border-top: none;
+  border-bottom: none;
+  }
+  nav button{
+    font-size: 0.7rem;
+    padding:0.6rem 1rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    padding:0rem;
+  }
+  #home::before {
+
+    background-size: cover;
+    background-position: center;
+  }
+  #home{
+    height: 60vh;
+  }
+}
+
